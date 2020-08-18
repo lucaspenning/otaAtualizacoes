@@ -1,0 +1,15 @@
+
+{
+    "network": {
+        "ssid": "TP-Link_FDC4",
+        "password": "29740734"
+    },
+    "git": {
+        "url": "https://github.com/lucaspenning/otaAtualizacoes",
+        "dir": "src"
+    },
+
+}
+
+
+
