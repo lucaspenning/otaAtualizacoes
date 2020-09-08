@@ -18,7 +18,7 @@ O código fonte deverá ficar em um repositório público do GitHub, com version
 
 Após realizar a verificação de versionamento caso ocorrer alguma atualização um led da cor verde deverá piscar duas vezes, caso não ocorrer nenhuma atualização o led deve piscar uma vez, também será publicada uma mensagem em um Broker MQTT denominado IoTicos, com o log das atividades realizadas em questão a atualização. 
 
-Se ocorrer falta de energia ou falta de rede internet apresentando erro na atualização um led amarelo permanecerá acesso até o problema ser resolvido e prosseguir com a atualização, em caso de erro de configuração será iniciado as atividades do aparelho com os arquivos de versão presentes no embarcado. Ao final da rotina de atualizações se tudo ocorreu bem o led amarelo irá ser apagado. 
+Logo a ligar o aparelho um led de cor Amarelo será acesso, se ocorrer falta de energia elétrica durante o processo de atualização, assim que a energia elétrica for retomada a atualização será refeita, se tivermos falta de rede internet apresentando erro na atualização um led amarelo permanecerá acesso até o problema ser resolvido e prosseguir com a atualização, isso se dá pelo fato da rotina de atualizações só gravar a nova versão no arquivo .version assim que 100% da atualização for concluida. Ao final da rotina de atualizações se tudo ocorreu bem o led amarelo irá ser apagado. 
 
 ### Arquivos:
 São 6 arquivos em MicroPython além de uma pasta nomeada como SRC, dentro desta pasta ficará nosso código de rotina para qual embarcado foi programado a realizar, neste caso foi implementado uma rotina para piscar leds.
