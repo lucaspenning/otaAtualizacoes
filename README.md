@@ -22,11 +22,17 @@ Se ocorrer falta de energia ou falta de rede internet apresentando erro na atual
 
 ### Arquivos:
 São 6 arquivos em MicroPython além de uma pasta nomeada como SRC, dentro desta pasta ficará nosso código de rotina para qual embarcado foi programado a realizar, neste caso foi implementado uma rotina para piscar leds.
+
 **conf.json:** arquivo onde configuramos com as credenciais da nossa rede Wifi e repositório do GitHub;
+
 **Ota_updater.py:** arquivo onde são realizados todos os downloads e update dos códigos com base no repositório do GitHub;
+
 **Code_download:** arquivo onde é realizado a conexão com a rede wifi, além de verificar se existem novas versões e faz todas as ações necessárias para atualizar, modificar ou excluir arquivos;
+
 **.version:** arquivo onde fica guardado e sincronizado todas a informação de versionamento do projeto local do dispositivo com o repositório do GitHub;
+
 **boot.py:** arquivo responsável pela ação de verificar versionamento de projeto ao reinicar o dispositivo, realizar a sincronização de todos os arquivos do projeto, além de publicar no broker MQTT IoTicos;
+
 **src/exemplo.py:** arquivo onde é implementada uma rotina específica, como por exemplo: leitura de sensores, controle de temperatura e etc...;
 
 ### Configurações:
