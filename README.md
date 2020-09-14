@@ -40,3 +40,7 @@ Primeiramente o arquivo que deve ser configurado é o arquivo JSON, sendo altera
 
 ### Bibliotecas:
 Foi utilzado a biblioteca UMQTT, com o arquivo simple.py para realizar a postagem de mensagens no Broker MQTT.
+
+
+### Releases:
+Caso não sejam feitas as releases corretamente (senão souber utilizar existem documentações do GitHub que poderão auxiliar nesse processo), irá ocasionar no mau funcionamento das atualizações, importante que o TAG VERSION siga o padrão 1.0, 1.1, 1.2,..., sempre matendo como base X.X;
