@@ -1,8 +1,4 @@
 
-
-
-
-
 #
 
 import os
@@ -36,6 +32,7 @@ if(verifica == 1):
   version = f.read()
   print(version)
   f.close()
+
   
 def ver_atualizacao():
   #Virificando atualizacoes
@@ -70,9 +67,7 @@ try:
     c = Code_download()
     c.download_update()
     pin18.value(0)
-    _thread.start_new_thread(ver_atualizacao, ())
-    print("\n\nAgora vai comecar o codigo que foi baixado\n")
-    exec(open('./exemplo.py').read()) #: como ja esta no diretorio que foi baixado os codigos executa o exemplo.py 
+    _thread.start_new_thread(ver_atualizacao, ()) 
 except Exception as e:
     print('ERRO: ' +str(e)) 
 finally:
@@ -83,4 +78,9 @@ if(verifica == 1):
   version_v = g.read()
   print(version_v)
   g.close()
-
+ 
+def run():
+      print("\n\nAgora vai comecar o codigo que foi baixado\n")
+      exec(open('src/exemplo.py').read()) #: como ja esta no diretorio que foi baixado os codigos executa o exemplo.py
+ 
+_thread.start_new_thread(run, ()) 
