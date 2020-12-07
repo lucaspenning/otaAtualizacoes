@@ -44,3 +44,6 @@ Foi utilzado a biblioteca UMQTT, com o arquivo simple.py para realizar a postage
 
 ### Releases:
 Caso não sejam feitas as releases corretamente (senão souber utilizar existem documentações do GitHub que poderão auxiliar nesse processo), irá ocasionar no mau funcionamento das atualizações, importante que o TAG VERSION siga o padrão 1.0, 1.1, 1.2,..., sempre matendo como base X.X;
+
+### Documento PDF:
+https://drive.google.com/file/d/1Dz_C2aP1KITh-WH6nKGxEjChyILz9Rt8/view?usp=sharing
